@@ -13,6 +13,20 @@ function Login(props) {
       >
         Login
       </button>
+      <button
+        onClick={() => {
+          setAuth(false);
+        }}
+      >
+        Logout
+      </button>
+      <button
+        onClick={() => {
+          setAuth(auth ? false : true);
+        }}
+      >
+        LogToggle
+      </button>
     </>
   );
 }
